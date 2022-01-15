@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="45sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/basketImageView"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/background_basket_image"
+        android:layout_width="111sp"
+        android:layout_height="89sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/basketNameTextView"
+        android:text="Name"
+        android:layout_toRightOf="@id/basketImageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#FF6E4E"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/basketPriceTextView"
+        android:layout_below="@id/basketNameTextView"
+        android:text="Price"
+        android:layout_toRightOf="@id/basketImageView"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StoreClient</string>
+    <string name="buy_now">Buy now!</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="withoutDiscountText"><strike>Test</strike></string>
+    <string name="name">Name</string>
+</resources>

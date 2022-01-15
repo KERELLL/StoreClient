@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation = "16dp"
+        app:cardCornerRadius = "10dp"
+        android:layout_marginEnd="18.75sp"
+        android:foregroundGravity = "center"
+        android:layout_centerInParent = "true"
+        android:layout_width = "71.43sp"
+        android:layout_height = "30.36sp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="#8D8D8D"
+            android:id="@+id/capacityPD"
+            android:gravity="center_vertical"
+            android:scaleType = "centerCrop"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            tools:ignore="RtlCompat" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

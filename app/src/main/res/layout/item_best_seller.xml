@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:id="@+id/cardViewBestSellerRoot"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12sp"
+        android:layout_width="181sp"
+        android:layout_height="227sp"
+        app:cardCornerRadius="10sp"
+        app:cardMaxElevation="2sp"
+        app:cardElevation="1sp"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="1sp"
+                android:layout_height="168sp"
+                android:scaleType="centerCrop"
+                android:id="@+id/bestSellerImageView"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_centerHorizontal="true"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/addFavoriteButton"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginTop="11sp"
+                android:layout_marginLeft="146sp"
+                android:background="@drawable/background_button_unfavorite"
+                android:src="@drawable/ic_unfavorite" />
+
+            <TextView
+                android:id="@+id/bestSellerDiscountPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textStyle="bold"
+                android:textColor="#010035"
+                android:layout_marginStart="21sp"
+                android:layout_below="@id/bestSellerImageView"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/bestSellerWithoutDiscountPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withoutDiscountText"
+                android:textColor="#CCCCCC"
+                android:layout_marginTop="4sp"
+                android:layout_marginStart="7sp"
+                android:layout_below="@id/bestSellerImageView"
+                android:layout_toEndOf="@id/bestSellerDiscountPrice"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/bestSellerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textColor="#010035"
+                android:layout_marginStart="21sp"
+                android:layout_below="@id/bestSellerDiscountPrice"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
